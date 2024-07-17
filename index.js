@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import dbConnect from "./config/mongodb.js";
 import userRoute from "./routes/userRoutes.js";
+import adminRoute from "./routes/adminRoute.js";
 
 dotenv.config();
 dbConnect();
@@ -22,6 +23,7 @@ app.use(
 );
 
 app.use("/",userRoute)
+app.use("/admin",adminRoute)
 
 
 app.listen(PORT, () => {
