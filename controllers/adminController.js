@@ -6,7 +6,6 @@ dotenv.config();
 
 
 export const adminLogin = (req, res) => {
-    console.log("wefgwquef");
     const adminEmail = process.env.ADMIN_EMAIL;
     const adminPassword = process.env.ADMIN_PASSWORD;
     const userName = "Admin";
