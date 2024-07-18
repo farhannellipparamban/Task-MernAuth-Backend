@@ -22,9 +22,8 @@ app.use(
   })
 );
 
-app.use("/",userRoute)
-app.use("/admin",adminRoute)
-
+app.use("/", userRoute);
+app.use("/admin", adminRoute);
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
